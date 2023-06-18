@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: http://localhost:8080
+          uri: http://192.168.0.20:8080
           predicates:
             - Path=/user/**
 
