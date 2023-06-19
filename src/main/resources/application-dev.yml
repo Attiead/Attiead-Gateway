@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: http://43.201.235.132
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/user/**
 
